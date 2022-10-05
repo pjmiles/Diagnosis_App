@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #fff;
+  --primary-alt: #B8DBFF;
+  --dark: #292F33;
+  --normal-font: 12px;
+  --bold-font: 18px
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
