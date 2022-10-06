@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background: var(--dark);
+    color: var(--primary-color);
+}
+
+.logo {
+    font-size: var(--bold-font);
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    font-size: var(--normal-font);
+}
+
