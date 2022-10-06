@@ -115,7 +115,7 @@ const Home = () => {
       </form>
 
       <div className="result-view">
-        symptoms view will be rendered later
+        Your result is here
         {/* <p>{symptom}</p> */}
         <div className="diagnosis result">
           {isLoading ? (
