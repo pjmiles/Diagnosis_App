@@ -1,7 +1,50 @@
+.home-section {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.heading {
+    text-align: center;
+    background-color: var(--primary-alt);
+}
+
+.input-control {
+    padding: 10px;
+
+}
+
+.input-field {
+    width: 100%;
+    padding: 7px 0;
+}
+
 .symptom-section {
-    border: 1px solid black;
-    position: absolute;
-    width: 180px;
-    min-height: 300px;
-    top: 150px;
+    box-shadow: var(--box-shadow);
+}
+
+/* button section */
+.submit {
+    text-align: center;
+}
+
+.symptopm-btn {
+    padding: 8px ;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: var(--btn-color);
+    border-radius: 5rem;
+    font-size: 14px;
+    color: var(--primary-color);
+    border: none;
+}
+
+.symptopm-btn:hover {
+    color: var(--primary-alt);
+}
+
+/* result display section */
+.result-view {
+    border: 1px solid var(--primary-alt);
+    min-width: 400px;
 }
