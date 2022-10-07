@@ -12,4 +12,11 @@
 
 * App was built with React (JavaScript Library)
 * CSS was used for styling
-* For medical diagnosis API calls visit [here](https://apimedic.com/)
+* For medical diagnosis API and documentation visit [here](https://apimedic.com/)
+
+# Live Solution
+
+* Click [here](https://diagnosisapp.vercel.app/) for visit the progress of the entire project. The change will be continuous.
+
+
+# TO-DO and Update
