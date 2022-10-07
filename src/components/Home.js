@@ -23,7 +23,6 @@ const Home = () => {
       ...state,
       [e.target.name]: e.target.value,
     }));
-    console.log("Hello");
   };
 
   // function to get priliminary diagnosis from patient
