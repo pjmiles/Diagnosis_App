@@ -13,3 +13,5 @@
 * App was built with React (JavaScript Library)
 * CSS was used for styling
 * For medical diagnosis API calls visit [here](https://apimedic.com/)
+
+# TO-DO and Update
