@@ -2,8 +2,10 @@
   --primary-color: #fff;
   --primary-alt: #B8DBFF;
   --dark: #292F33;
+  --btn-color: rgb(168, 61, 168);
   --normal-font: 12px;
-  --bold-font: 18px
+  --bold-font: 18px;
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 * {

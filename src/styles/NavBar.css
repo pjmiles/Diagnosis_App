@@ -24,5 +24,6 @@ nav ul {
 
 nav ul li {
     font-size: var(--normal-font);
+    cursor: pointer;
 }
 
