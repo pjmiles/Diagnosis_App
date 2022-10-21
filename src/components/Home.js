@@ -1,7 +1,5 @@
 import "../styles/Home.css";
-import { symptoms_url } from "../api/axios";
-import { diagnosis_url, token } from "../api/axios";
-import { newSymptoms_url } from "../api/axios";
+import { BaseURL } from "../api/axios";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -28,8 +26,9 @@ const Home = () => {
   // function to get priliminary diagnosis from patient
   const getSymptoms = async () => {
     try {
-      const { data } = await axios.get(newSymptoms_url);
+      const { data } = await axios.get(BaseURL + `symptoms?token=${process.env.REACT_APP_ACCESS_TOKEN}`);
       setSymptom(data);
+      console.log(data)
     } catch (e) {
       console.log(e);
     }
@@ -47,7 +46,7 @@ const Home = () => {
         // )
         // console.log(result)
         const { data } = await axios.get(newUrl, {
-          headers: { Authorization: `${token}` },
+          headers: { Authorization: `${process.env.REACT_APP_ACCESS_TOKEN}` },
         });
         setDiagnosis(JSON.stringify(data));
         console.log(data[0]);
