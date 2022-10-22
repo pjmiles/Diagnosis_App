@@ -26,7 +26,7 @@ const Home = () => {
   // function to get priliminary diagnosis from patient
   const getSymptoms = async () => {
     try {
-      const { data } = await axios.get(BaseURL + `symptoms?token=${process.env.REACT_APP_ACCESS_TOKEN}`);
+      const { data } = await axios.get(`${process.env.REACT_APP_ACCESS_TOKEN}`);
       setSymptom(data);
       console.log(data)
     } catch (e) {
@@ -45,7 +45,7 @@ const Home = () => {
         //     `${patientDetaiils.symptoms}&${patientDetaiils.gender}&${patientDetaiils.year_of_birth}`
         // )
         // console.log(result)
-        const { data } = await axios.get(newUrl, {
+        const { data } = await axios.get(BaseURL + "symptoms?token=", {
           headers: { Authorization: `${process.env.REACT_APP_ACCESS_TOKEN}` },
         });
         setDiagnosis(JSON.stringify(data));
@@ -54,6 +54,7 @@ const Home = () => {
       } catch (e) {
         console.log(e);
         setIsLoading(false);
+        setErrMsg("Something went wrong, please try again.")
       }
     };
     getDiagnosis();
@@ -128,8 +129,9 @@ const Home = () => {
       <div className="result-view">
         Your result is here
         {/* <p>{symptom}</p> */}
+        {errMsg && <p className="error">{errMsg}</p>}
         <div className="diagnosis result">
-          {isLoading ? (
+          {!isLoading ? (
             <div>
               <div>{diagnosis}</div>
               {/* {diagnosis.map((item) => (
